@@ -7,6 +7,6 @@ namespace OSRegister.Models
 {
     public class Class
     {
-        public int MinhaPropriedade { get; set; }
+        public int MinhaPropriedadee { get; set; }
     }
 }
