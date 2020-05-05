@@ -13,10 +13,11 @@
     </div>
 </p>
 
-<table class="table table-striped thead-dark">
+
+<table class="table table-striped thead-dark table-sm" id="ClientTable" width="100%">
     <thead>
         <tr>
-            <th>Nome</th>
+            <th>Client Name</th>
             <th>E-mail</th>
             <th>Phone</th>
             <th>Adress</th>
@@ -24,7 +25,7 @@
             <th></th>
         </tr>
     </thead>
-    <tbody class="table-active table-striped">
+    <tbody class="table-striped">
         @foreach (var item in Model)
         {
             <tr>
