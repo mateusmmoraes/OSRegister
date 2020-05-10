@@ -14,8 +14,8 @@
 </p>
 
 
-<table class="table table-striped thead-dark table-sm" id="ClientTable" width="100%">
-    <thead>
+<table class="table table-bordered table-striped table-sm" id="ClientTable" width="100%">
+    <thead class="thead-dark">
         <tr>
             <th>Client Name</th>
             <th>E-mail</th>
@@ -57,10 +57,10 @@
 
 
 
-<table class="table">
-    <thead>
+<table id="myTable" class="table table-bordered table-striped tablesorter">
+    <thead class="thead-dark">
         <tr>
-            <th>
+            <th class="filter-select filter-exact" data-placeholder="Insert a Name">
                 Client Name
             </th>
             <th>
@@ -105,6 +105,28 @@
     </tr>
 }
      </tbody>
+    <tfoot>
+        <th colspan="7" class="ts-pager">
+            <div class="form-inline">
+                <div class="btn-group btn-group-sm mx-1" role="group">
+                    <button type="button" class="btn btn-secondary first" title="first">⇤</button>
+                    <button type="button" class="btn btn-secondary prev" title="previoues">←</button>
+                </div>
+                <span class="pagedisplay"></span>
+                <div class="btn-group btn-group-sm mx-1" role="group">
+                    <button type="button" class="btn btn-secondary next" title="next">→</button>
+                    <button type="button" class="btn btn-secondary last" title="last">⇥</button>
+                </div>
+                <select class="form-control-sm custom-select px-1 pagesize" title="Select page size">
+                    <option selected="selected" value="10"></option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="all">All Rows</option>
+                </select>
+                <select class="form-control-sm custom-select px-4 mx-1 pagenum" title="Select Page number"></select>
+            </div>
+         </th>
+    </tfoot>
 </table>
 
 </div>
