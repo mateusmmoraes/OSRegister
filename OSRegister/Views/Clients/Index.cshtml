@@ -13,11 +13,16 @@
     </div>
 </p>
 
+<script>
+    $(function () {
+        $('#ClientTable').DataTable();
+    });
+</script>
 
-<table class="table table-bordered table-striped table-sm" id="ClientTable" width="100%">
+<table class="table table-bordered table-striped table-sm table-hover" id="ClientTable">
     <thead class="thead-dark">
         <tr>
-            <th>Client Name</th>
+            <th>Name</th>
             <th>E-mail</th>
             <th>Phone</th>
             <th>Adress</th>
@@ -46,87 +51,22 @@
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.ClientId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ClientId">Client info</a> |
+                    <a asp-action="Details" asp-route-id="@item.ClientId">info</a> |
                     <a asp-action="Delete" asp-route-id="@item.ClientId">Delete Client</a>
                 </td>
             </tr>
         }
     </tbody>
-</table>
-
-
-
-
-<table id="myTable" class="table table-bordered table-striped tablesorter">
-    <thead class="thead-dark">
-        <tr>
-            <th class="filter-select filter-exact" data-placeholder="Insert a Name">
-                Client Name
-            </th>
-            <th>
-                Client E-mail
-            </th>
-            <th>
-                Client Phone
-            </th>
-            <th>
-                Client Adress
-            </th>
-            <th>
-                Client Role
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model)
-{
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ClientName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ClientEmail)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ClientPhone)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ClientAdress)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ClientRole)
-        </td>
-        <td>
-            <a asp-action="Edit" asp-route-id="@item.ClientId">Edit</a> |
-            <a asp-action="Details" asp-route-id="@item.ClientId">Client info</a> |
-            <a asp-action="Delete" asp-route-id="@item.ClientId">Delete Client</a>
-        </td>
-    </tr>
-}
-     </tbody>
     <tfoot>
-        <th colspan="7" class="ts-pager">
-            <div class="form-inline">
-                <div class="btn-group btn-group-sm mx-1" role="group">
-                    <button type="button" class="btn btn-secondary first" title="first">⇤</button>
-                    <button type="button" class="btn btn-secondary prev" title="previoues">←</button>
-                </div>
-                <span class="pagedisplay"></span>
-                <div class="btn-group btn-group-sm mx-1" role="group">
-                    <button type="button" class="btn btn-secondary next" title="next">→</button>
-                    <button type="button" class="btn btn-secondary last" title="last">⇥</button>
-                </div>
-                <select class="form-control-sm custom-select px-1 pagesize" title="Select page size">
-                    <option selected="selected" value="10"></option>
-                    <option value="20">20</option>
-                    <option value="30">30</option>
-                    <option value="all">All Rows</option>
-                </select>
-                <select class="form-control-sm custom-select px-4 mx-1 pagenum" title="Select Page number"></select>
-            </div>
-         </th>
+        <tf colspan="7" class="ts-pager">
+
+        </tf>
     </tfoot>
+ 
 </table>
 
-</div>
+<script>
+    $(function () {
+        $('#ClientTable').DataTable();
+    });
+</script>

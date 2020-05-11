@@ -3,10 +3,6 @@
 
 // Write your JavaScript code.
 
-$(function () {
-    $("myTable").tablesorter();
-});
-
 
 
 
