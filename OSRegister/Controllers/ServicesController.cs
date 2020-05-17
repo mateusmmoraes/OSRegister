@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Internal;
 using OSRegister;
 
 namespace OSRegister.Controllers
@@ -155,5 +159,10 @@ namespace OSRegister.Controllers
         {
             return _context.Service.Any(e => e.ServiceId == id);
         }
+
+        // GET services finished
+        
+
+
     }
 }

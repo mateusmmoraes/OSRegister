@@ -13,36 +13,36 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="ServiceName" class="control-label"></label>
+                Service Name
                 <input asp-for="ServiceName" class="form-control" />
                 <span asp-validation-for="ServiceName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="OrderId" class="control-label"></label>
-                <select asp-for="OrderId" class ="form-control" asp-items="ViewBag.OrderId"></select>
+                Order ID
+                <input asp-for="OrderId" class ="form-control" asp-items="ViewBag.OrderId"></input>
             </div>
             <div class="form-group">
-                <label asp-for="Diagnostic" class="control-label"></label>
+                Diagnostic
                 <input asp-for="Diagnostic" class="form-control" />
                 <span asp-validation-for="Diagnostic" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Solution" class="control-label"></label>
+                Solution
                 <input asp-for="Solution" class="form-control" />
                 <span asp-validation-for="Solution" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
+                    <input class="form-check-input" asp-for="Status" /> Finished
                 </label>
             </div>
             <div class="form-group">
-                <label asp-for="TechnicianName" class="control-label"></label>
+                Technician Name
                 <input asp-for="TechnicianName" class="form-control" />
                 <span asp-validation-for="TechnicianName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Comments" class="control-label"></label>
+                Comments
                 <input asp-for="Comments" class="form-control" />
                 <span asp-validation-for="Comments" class="text-danger"></span>
             </div>
